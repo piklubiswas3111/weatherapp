@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shap"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/loacton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editback"
+        android:hint="Enter Your Location"
+        android:padding="7dp"
+        android:textColor="#000"
+        android:textColorHint="#E5000000" />
+
+    <Button
+        android:id="@+id/whterget"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/loacton"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/editback"
+        android:text="search"
+        android:textColor="#000" />
+
+
+    <ImageView
+        android:id="@+id/whaterimage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/whterget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_baseline_wb_sunny_24" />
+
+    <TextView
+        android:id="@+id/Clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/whaterimage"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Clear"
+        android:textColor="#F6F2F2"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/getcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Clear"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Austin"
+        android:textColor="#F6F2F2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/getcity"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#fba335">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linerlayoutone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/datafact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10C"
+                    android:textColor="#ffffff"
+                    android:textSize="50dp"
+                     />
+
+                <TextView
+                    android:id="@+id/collyface"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/datafact"
+                    android:paddingLeft="5dp"
+                    android:text="H0 L0"
+                    android:textColor="#F6F2F2"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linerlayoutree"
+                android:layout_toRightOf="@id/linerlayoutone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/wen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="wed"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/Thu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Thu"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/Fri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Fri"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/linerlayoutone"
+                android:layout_below="@+id/linerlayoutree"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagewen"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                   android:src="@drawable/cloud"
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:id="@+id/imagethe"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/cloud"
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:id="@+id/imagefri"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/cloud"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

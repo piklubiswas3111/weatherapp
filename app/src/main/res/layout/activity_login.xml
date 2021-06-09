@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/d"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shap"
+    tools:context=".Login">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imagecloud"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cloud"
+
+        />
+
+    <TextView
+        android:id="@+id/Logintitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:layout_below="@+id/imagecloud"
+        android:textColor="#fff"
+        android:textSize="26dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Logintitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#000"
+        android:importantForAutofill="auto"
+        android:autofillHints="Admin"
+        android:background="@drawable/editback"
+        android:hint="Enter your Username"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="#B7262424" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/editback"
+        android:hint="Enter your Password"
+        android:textColor="#000"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="#B7262424" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editback"
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:layout_below="@id/password"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
